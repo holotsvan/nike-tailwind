@@ -20,7 +20,7 @@ export const Footer = () => {
                 href=""
                 key={icon.alt}
                 onClick={(e) => e.preventDefault()}
-                className="flex justify-center items-center w-12 h-12 bg-white rounded-full cursor-pointer"
+                className="flex justify-center items-center w-12 h-12 bg-white rounded-full cursor-pointer hover:opacity-80 delay-100 duration-300"
               >
                 <img src={icon.src} alt={icon.alt} width={24} height={24} />
               </a>
@@ -36,7 +36,7 @@ export const Footer = () => {
               <ul>
                 {section.links.map((link) => (
                   <li
-                    className="mt-3 text-white-400 font-montserrat leading-normal cursor-pointer hover:text-slate-gray"
+                    className="mt-3 text-white-400 font-montserrat leading-normal cursor-pointer hover:text-slate-gray delay-100 duration-300"
                     key={link.name}
                   >
                     <a href={link.link}>{link.name}</a>

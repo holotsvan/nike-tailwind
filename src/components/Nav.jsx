@@ -20,7 +20,7 @@ export const Nav = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                className="font-montserrat leading-normal text-lg text-slate-gray"
+                className="font-montserrat leading-normal text-lg text-slate-gray hover:text-slate-700 delay-100 duration-300 ease-in-out"
               >
                 {item.label}
               </a>
@@ -28,11 +28,11 @@ export const Nav = () => {
           ))}
         </ul>
         <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
-          <a href="/">Sign in</a>
+          <a href="/" className="hover:text-coral-red delay-100 ease duration-300">Sign in</a>
           <span>/</span>
-          <a href="/">Explore now</a>
+          <a href="/" className="hover:text-coral-red delay-100 ease duration-300">Explore now</a>
         </div>
-        <div className="hidden max-lg:block">
+        <div className="hidden max-lg:block cursor-pointer">
           <img src={hamburger} alt="hamburger icon" width={25} height={25} />
         </div>
       </nav>

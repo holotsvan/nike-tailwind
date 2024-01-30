@@ -14,7 +14,8 @@ const Button = ({
                         ${textColor || "text-white"}
                         ${backgroundColor || "bg-coral-red"}
                         ${borderColor || "border-coral-red"}
-                        ${fullWidth && "w-full"}`}
+                        ${fullWidth && "w-full"}
+                        transition ease delay-100 hover:bg-opacity-90 duration-200`}
     >
       {label}
       {iconURL && (
